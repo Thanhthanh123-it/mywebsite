@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!---Coding By CoderGirl!--->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Profile Card UI with Slider | CoderGirl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Profile Section -->
+  <section class="main">
+    <div class="profile-card">
+      <div class="image">
+        <img src="images/profile.jpg" alt="" class="profile-pic">
+      </div>
+      <div class="data">
+        <h2>Nguyễn Ngọc Thạnh</h2>
+        <span>Developer & Designer</span>
+        <ul class="extra-info">
+          <li><strong>🌍 Location:</strong> Hồ Chí Minh, Việt Nam</li>
+          <li><strong>💻 Tech Stack:</strong> HTML, CSS, JavaScript</li>
+          <li><strong>🎨 Skills:</strong> UI/UX, Figma, Photoshop</li>
+          <li><strong>📚 Interests:</strong> Coding, Design, Music</li>
+        </ul>
+      </div>
+      <div class="row">
+  <div class="info">
+    <h3>Following</h3>
+    <span>120</span>
+  </div>
+  <div class="info">
+    <h3>Followers</h3>
+    <span>5000</span>
+  </div>
+  <div class="info">
+    <h3>Posts</h3>
+    <span>209</span>
+  </div>
+</div>
+
+<!-- Buttons chuyển vào đây -->
+<div class="buttons profile-btns">
+  <a href="#" class="btn">Message</a>
+  <a href="#" class="btn">Follow Me</a>
+</div>
+    </div>
+  </section>
+
+  <!-- Slider Section -->
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <img src="images/designer.jpg" alt="Designer">
+        <h3 style="color: #ff6f61;">Designer</h3>
+        <p>Lorem ipsum dolor sit explicabo adipiscing elit được dịch sang tiếng Việt</p>
+        <span class="icon">⦿</span>
+      </div>
+      <div class="slide">
+        <img src="images/developer.jpg" alt="Developer">
+        <h3 style="color: #6b48ff;">Developer</h3>
+        <p>Lorem ipsum dolor sit explicabo adipiscing elit được dịch sang tiếng Việt</p>
+        <span class="icon">⦿</span>
+      </div>
+      <div class="slide">
+        <img src="images/marketer.jpg" alt="Marketer">
+        <h3 style="color: #ff9f43;">Marketer</h3>
+        <p>Lorem ipsum dolor sit explicabo adipiscing elit được dịch sang tiếng Việt</p>
+        <span class="icon">⦿</span>
+      </div>
+    </div>
+    <div class="buttons">
+      <button onclick="prevSlide()">←</button>
+      <button onclick="nextSlide()">→</button>
+    </div>
+    <div class="dots"></div>
+  </div>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

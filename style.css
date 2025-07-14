@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url(images/back.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    /* Profile Section Styles */
+    .main {
+      width: 100%;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+      
+    }
+
+    .profile-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 400px;
+      width: 100%;
+      border-radius: 25px;
+      padding: 30px;
+      border: 1px solid #ffffff40;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    .image {
+      position: relative;
+      height: 150px;
+      width: 150px;
+    }
+
+    .image .profile-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    .data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+    }
+
+    .data h2 {
+      font-size: 33px;
+      font-weight: 600;
+    }
+
+    span {
+      font-size: 18px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .row .info {
+      text-align: center;
+      padding: 0 20px;
+      color: #000;
+    }
+
+    .row .info h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .row .info span {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .buttons .btn {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      white-space: nowrap;
+      background: linear-gradient(to right, #ff6f61, #6b48ff);
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .buttons .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Slider Styles */
+    .slider {
+      position: relative;
+      width: 900px;
+      height: 400px;
+      overflow: hidden;
+      margin-top: 500px; 
+      margin-bottom: 100px;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      min-width: 300px;
+      height: 400px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .slide h3 {
+      color: #666;
+      margin: 0 0 10px;
+    }
+
+    .slide p {
+      color: #999;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    .slide .icon {
+      font-size: 24px;
+      color: #007bff;
+    }
+
+    .buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .buttons button {
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+    }
+
+    .dots span {
+      width: 10px;
+      height: 10px;
+      background: #bbb;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .dots .active {
+      background: #007bff;
+    }
+    /* Chỉ áp dụng cho phần button trong profile */
+.profile-btns {
+  margin-top: 20px;
+  position: static;
+  transform: none;
+}
